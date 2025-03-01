@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "I vote NO to this proposal as the main reason alleged in it is the appreciation of the ADA value, which is not currently the case in the market. Though this appreciation can clearly happens this year I don't think it is enough to promote this change, as I am not sure it will generate the behavioral change it is aimed by the proposal.\nToday, staking rewards are around 3% which I think is fine and it is allowing the network to work, as well as the SPOs, allowing the creation of a strong Treasury to promote and secure the evolution of our Blockchain.\nThat doesn't mean that the question raised is totally relevant and shall be analyzed with more insights, I'd love to see historical data on incentivized behaviors and how to affect them, with a clear purpose of supporting the goals to be achieved and understanding the impact these type of changes can produce on the network abroad."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
