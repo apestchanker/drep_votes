@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "I am not sure that there is a clear USE CASE for the proposed technical implementations. In order to have a true roadmap for Cardano, even if it is just for the current year, a clear case on WHY we will be building what we are building, shall be clearly stated. \nThe future of our blockchain depends on adoption and real use cases, I see a very vague description of those use cases in the proposal, therefore I have no rationales to approve the proposal. Also as the proposal identifies several very well known expected evolutions of the technical protocol and because the proposal comes from the Intersect's product committee I do believe there are strong technical reasons for the proposed changes, though they are not really explained in detail in the proposal or accompanying documentation, so I cannot either vote against this.\nI hope next proposals from the committee's will be more complete, professional and with the users at the top of their mind, so we can really see WHY we are doing what we are doing."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
